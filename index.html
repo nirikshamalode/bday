@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="Viewport" content="width-device-width, initial-scale=1.0">
+        <title>CSS Envelope+ Letter(Open/Close on Click)</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <strong>Hey Beautiful!!</strong>
+                            <p>
+                                Words cannot describe how much important you mean to me!
+                                I love you so much and all I wish is nothing 
+                                but more happiness and success come to you!
+                                We have grown together,seen our worst as well
+                                as best phases.I just want us to grow old together
+                                and stay like this forever!!
+                                Tum thi. Tum ho. Tum hamesha rahoge. 
+                                Love you loads and loads my Polaris!
+                                Happiest Birthdayyyy Pretty soul!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="heart"> </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const envelope = document.querySelector('.envelope-wrapper');
+            envelope.addEventListener('click', ( ) =>{
+                envelope.classList.toggle('flap');
+            });
+        </script>
+    </body>
+</html>
